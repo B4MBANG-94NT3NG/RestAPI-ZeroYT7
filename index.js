@@ -17,7 +17,7 @@ app.use(express.static("public"))
 
 app.use('/', mainrouter)
 app.use('/api', apirouter)
-app.use('/api', apirouter)
+app.use('/api', apiirouter)
 
 app.listen(PORT, () => {
     console.log(color("Server running on port " + PORT,'green'))
