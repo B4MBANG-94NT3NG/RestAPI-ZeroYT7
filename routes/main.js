@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/api2', (req, res) => {
-    res.sendFile(__path + '/routes/api2.html')
+    res.sendFile(__path + '/views/index.html')
 })
 
 router.get('/api', (req, res) => {
