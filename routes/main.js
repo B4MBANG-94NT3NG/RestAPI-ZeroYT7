@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
     res.sendFile(__path + '/views/home.html')
 })
 
-router.get('/api2', (req, res) => {
+router.get('/apii', (req, res) => {
     res.sendFile(__path + '/views/index.html')
 })
 
