@@ -5,7 +5,8 @@ const PORT = process.env.PORT || 8080 || 5000 || 3000
 var { color } = require('./lib/color.js')
 
 var mainrouter = require('./routes/main'),
-    apirouter = require('./routes/api')
+    apirouter = require('./routes/api'),
+    apiirouter = require('./views/api')
     
 var app = express()
 app.enable('trust proxy');
@@ -15,6 +16,7 @@ app.use(secure)
 app.use(express.static("public"))
 
 app.use('/', mainrouter)
+app.use('/api', apirouter)
 app.use('/api', apirouter)
 
 app.listen(PORT, () => {
