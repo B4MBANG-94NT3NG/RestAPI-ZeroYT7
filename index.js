@@ -5,8 +5,8 @@ const PORT = process.env.PORT || 8080 || 5000 || 3000
 var { color } = require('./lib/color.js')
 
 var mainrouter = require('./routes/main'),
-    apirouter = require('./routes/api'), 
-    apirouter2 = require('./routes/api2')
+    apirouter = require('./routes/api') 
+    apiirouter = require('./routes/apii') 
     
 var app = express()
 app.enable('trust proxy');
@@ -17,7 +17,7 @@ app.use(express.static("public"))
 
 app.use('/', mainrouter)
 app.use('/api', apirouter)
-app.use('/api2', apirouter2)
+app.use('/apii', apiirouter)
 
 app.listen(PORT, () => {
     console.log(color("Server running on port " + PORT,'green'))
