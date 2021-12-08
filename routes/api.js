@@ -11,7 +11,7 @@ var kuhong = db.get('ojan'); // jan diubah
 
 var creatorList = ['BAMBANG TRI RAHARJO']; // Nama Lu Ngab
 var creator = creatorList[Math.floor(Math.random() * creatorList.length)]; // Ini jan diubah
-var key = ['BambangGans'], ['Unlimited'],['Nabati']// Apikey Lu Ngab
+var key = 'BambangGans'// Apikey Lu Ngab
 
 // Required Modules :
 var ffmpeg = require('fluent-ffmpeg');
